@@ -1,23 +1,7 @@
-puts "Donne moi un nombre"
-
-nombre = gets.chomp
-
-i = 0
-
-loop do 
-	puts "jean.dupont.#{i}@email.fr" 
-	if i == nombre.to_i 
-			break
-		end		
-	i += 1
+mailing_list = []
+	50.times do |i|
+  next if i % 2 == 1
+  email = "jean.dupont.#{i}@email.fr"
+  mailing_list << email
 end
-
-case nombre % 2
-  when 0
-    :pair
-  when 1
-    :impair
-  else
-    :non_entier
-end
-
+puts mailing_list 
