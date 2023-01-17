@@ -11,6 +11,9 @@ while etages > 25 || etages < 1 do
 end
 
 etages.times do
+    espace.times do
+          print " "
+        end
        espace -= 1
     diese.times do
        print "#"
